@@ -19,7 +19,6 @@
 <!-- Site-specific -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
-
 </head>
 <body>
  <nav class="navbar navbar-default navbar-fixed-top">
@@ -107,12 +106,10 @@
 <ul class="nav navbar-nav navbar-right">
   <li id="scroll" class=""><a href="#">Back-to-Top</a></li>
 </ul>  
-</div>
+</div><!--end container nav div-->
 </nav>
 
-<div id="success" class="alert alert-success">
-  Congrats!
-</div>
+<div id="success" class="alert alert-success">Congrats!</div>
 
 <div class="container">
 
@@ -123,27 +120,26 @@
   </div>
   </div><!--end row-->
 
-
   <div class="row">
-
     <div class="col-sm-12 img-rounded well">
+
       <form class="form form-group" role="form" id="geologic-time-period">
 
         <table class="table table-responsive">
           <thead>
-            <th class="col-sm-3">Eon</th>
+            <th class="col-sm-2">Eon</th>
             <th class="col-sm-3">Era</th>
-            <th class="col-sm-3">Period</th>
+            <th class="col-sm-4">Period</th>
             <th class="col-sm-3">Epoch</th>    
           </thead>
           <tbody>
             <tr class="">
               <td class="eon-td" rowspan="16"> 
-                <span class="eon">Phanerozoic<span class="mya small text-muted">542 mya-present</span></span>
+                <span class="eon">Phanerozoic<span class="mya small text-muted">542 mya-now</span></span>
                 <div id="542" class="input-group time-input"> 
-                 <span class="input-group-addon input-sm">Begins at</span>
+              
                   <input type="text" name="542" class="form-control input-sm"> 
-                  <span class="input-group-addon input-sm">mya-present</span>
+                  <span class="input-group-addon input-sm">mya-now</span>
                 </div> 
                 <div id="Phanerozoic" class="input-group"> 
                   <input type="text" name="Phanerozoic" class="form-control input-sm"> 
@@ -151,11 +147,11 @@
                 </div> 
               </td>
               <td class="era-tbl" rowspan="7">
-               <span class="era">Cenozoic<span class="mya small text-muted">65 mya-present</span></span>
+               <span class="era">Cenozoic<span class="mya small text-muted">65 mya-now</span></span>
                <div id="65" class="input-group time-input"> 
-                <span class="input-group-addon input-sm">Begins at</span>
+           
                 <input type="text" name="65" class="form-control input-sm"> 
-                <span class="input-group-addon input-sm">mya-present</span>
+                <span class="input-group-addon input-sm">mya-now</span>
               </div> 
               <div id="Cenozoic" class="input-group">
                 <input type="text" name="Cenozoic" class="form-control input-sm">
@@ -163,11 +159,11 @@
               </div>
             </td>
             <td class="period-tbl" rowspan="2">
-             <span class="period">Quaternary<span class="mya small text-muted">2 mya-present</span></span>
+             <span class="period">Quaternary<span class="mya small text-muted">2 mya-now</span></span>
              <div id="2" class="input-group time-input"> 
-              <span class="input-group-addon input-sm">Begins at</span>
+ 
               <input type="text" name="2" class="form-control input-sm"> 
-              <span class="input-group-addon input-sm">mya-present</span>
+              <span class="input-group-addon input-sm">mya-now</span>
             </div> 
             <div id="Quaternary" class="input-group">
               <input type="text" name="Quaternary" class="form-control input-sm">
@@ -175,11 +171,11 @@
             </div>
           </td>
           <td class="epoch-tbl">
-           <span class="epoch">Holocene<span class="mya small text-muted">11,700 yrs-present</span></span>
+           <span class="epoch">Holocene<span class="mya small text-muted">11,700 yrs-now</span></span>
            <div id="11700" class="input-group time-input"> 
-            <span class="input-group-addon input-sm">Begins at</span>
+    
             <input type="text" name="11700" class="form-control input-sm"> 
-            <span class="input-group-addon input-sm">mya-present</span>
+            <span class="input-group-addon input-sm">mya-now</span>
           </div> 
           <div id="Holocene" class="input-group">           
             <input type="text" name="Holocene" class="form-control input-sm">
@@ -259,7 +255,7 @@
   <td class="era-tbl" rowspan="3">
    <span class="era">Mesozoic<span class="mya small text-muted">251-65 mya</span></span>
    <div id="251" class="input-group time-input"> 
-     <span class="input-group-addon input-sm">Begins at</span>
+     <span class="input-group-addon input-sm">Start:</span>
      <input type="text" name="251" class="form-control input-sm"> 
      <span class="input-group-addon input-sm">mya</span>
    </div> 
@@ -298,7 +294,7 @@
   <td class="era-tbl" rowspan="6">
    <span class="era">Paleozoic<span class="mya small text-muted">542-251 mya</span></span>
    <div id="Paleozoic_time" class="input-group time-input"> 
-    <span class="input-group-addon input-sm">Begins at</span>
+    <span class="input-group-addon input-sm">Start:</span>
     <input type="text" name="542" class="form-control input-sm"> 
     <span class="input-group-addon input-sm">mya</span>
   </div> 
@@ -317,9 +313,9 @@
 </tr>
 <tr>
   <td class="period-tbl">
-    <table class="table-responsive table well"> 
+    <table id="world-vs-usa" class="table-responsive table well"> 
       <tr>  
-        <td rowspan=2 valign="center">  
+        <td rowspan="2">  
           <span class="period">Carboniferous<span class="mya small text-muted">359-299 mya</span></span>
           <div id="Carboniferous" class="input-group">
             <input type="text" name="Carboniferous" class="form-control input-sm">
@@ -382,7 +378,7 @@
   <td class="eon-tbl" rowspan="3">
    <span class="eon">Proterozoic<span class="mya small text-muted">2500-542 mya</span></span>
    <div id="2500" class="input-group time-input"> 
-    <span class="input-group-addon input-sm">Begins at</span>
+    <span class="input-group-addon input-sm">Start:</span>
     <input type="text" name="2500" class="form-control input-sm"> 
     <span class="input-group-addon input-sm">mya</span>
   </div> 
@@ -420,7 +416,7 @@
   <td class="eon-tbl" rowspan="4">
    <span class="eon">Archean<span class="mya small text-muted">4000-2500 mya</span></span>
    <div id="4000" class="input-group time-input"> 
-    <span class="input-group-addon input-sm">Begins at</span>
+    <span class="input-group-addon input-sm">Start:</span>
     <input type="text" name="4000" class="form-control input-sm"> 
     <span class="input-group-addon input-sm">mya</span>
   </div> 
@@ -473,18 +469,18 @@
 
 </form>
 
-</div>
+</div><!--end col table div-->
 
 </div><!--end table row-->
 
 </div><!--end container-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery-1.12.0.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/npm.min.js"></script>
 
 <!-- validate form -->
 <script src="js/validate.js"></script>

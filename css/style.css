@@ -13,13 +13,18 @@ table {
 }
 
 .eon, .era, .period, .epoch, .mya {
-	font-weight: bold;
-	display:block;
+	font-weight: bold;	
 }
 
 .mya {
-	margin-bottom: 10px;
+	margin-left: 5px;
 }
+
+#world-vs-usa .mya {
+	display:block;
+	margin-left:0;
+}
+
 
 input .form-control {
 	margin: 20px 0;
