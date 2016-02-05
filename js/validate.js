@@ -55,33 +55,40 @@ $(document).ready(function() {
    $(".epoch").hide();   
  });
 
-  //Click event to scroll to top
-  $('#scroll').click(function(){
-    $('html, body').animate({scrollTop : 0},800);
+  //scroll to top
+  $("#top").click(function() {
+    $('html, body').animate({scrollTop : 0}, 800);
     return false;
   });
 
-  $('#geologic-time-period input[type=text]').blur(function(e) {
-    if((this.name) != (this.value)) {          
-      $('#' + this.name).removeClass('has-success').addClass('has-error');  
+    //scroll to bottom
+    $("#bottom").click(function() {
+      $("html, body").animate({ scrollTop : $(document).height()-$(window).height()}, 800);
+      return false;
+    });
 
-    } else {
-      $('#' + this.name).removeClass('has-error').addClass('has-success');
-      correctCount++;
-      console.log(correctCount);
-    }    
+
+    $('#geologic-time-period input[type=text]').blur(function(e) {
+      if((this.name) != (this.value)) {          
+        $('#' + this.name).removeClass('has-success').addClass('has-error');  
+
+      } else {
+        $('#' + this.name).removeClass('has-error').addClass('has-success');
+        correctCount++;
+        console.log(correctCount);
+      }    
   });//end instant validate
 
 
-  if(correctCount == 43){
-    $('#success').show();
-    $('html, body').animate({scrollTop : 0},800);
-  }
+    if(correctCount == 43){
+      $('#success').show();
+      $('html, body').animate({scrollTop : 0},800);
+    }//end if
 
 
-  $('#reset').click(function(){ 
-    correctCount = 0;
-    $('#success').hide();
+    $('#reset').click(function(){ 
+      correctCount = 0;
+      $('#success').hide();
      //restore default
      $("#geologic-time-period input[type=text]").each(function() {  
       $('#' + this.name + "_input").removeClass('has-error').removeClass('has-success'); 
@@ -90,6 +97,6 @@ $(document).ready(function() {
    });//end reset
 
 
-});
+  });
 
 
