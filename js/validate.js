@@ -91,7 +91,7 @@ $(document).ready(function() {
       $('#success').hide();
      //restore default
      $("#geologic-time-period input[type=text]").each(function() {  
-      $('#' + this.name + "_input").removeClass('has-error').removeClass('has-success'); 
+      $('#' + this.name).removeClass('has-error').removeClass('has-success'); 
     });
      $('input[type=text]').val('');//reset all input
    });//end reset
