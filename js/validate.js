@@ -90,7 +90,7 @@ $(document).ready(function() {
       correctCount = 0;
       $('#success').hide();
      //restore default
-     $("#geologic-time-period input[type=text]").each(function() {  
+     $("input[type=text]").each(function() {  
       $('#' + this.name).removeClass('has-error').removeClass('has-success'); 
     });
      $('input[type=text]').val('');//reset all input

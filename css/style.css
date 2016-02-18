@@ -2,11 +2,6 @@ html, body {
 	height: 100%;	
 }
 
-.container .container-fluid{
-	min-width: 710px;
-}
-
-
 body {
 	padding-top: 50px;
 	background: #ffffff url("../img/shley-tree-2.png");
@@ -34,22 +29,9 @@ input .form-control {
 	margin: 20px 0;
 }
 
-#shortie {
-	height: 70%;
-}
-
-#controls {
-	display:inline;
-	margin-left: 80px;
-}
-
 #errors, #success {
 	display:none;
 	margin-top: 50px;
-}
-
-#geologic-time-period {
-	padding: 10px;
 }
 
 .time-input {
