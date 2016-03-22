@@ -1,6 +1,9 @@
 $(document).ready(function() {
   var correctCount = 0;
 
+  $(".archean-eras").hide();
+  $(".proterozoic-eras").hide();
+
   $("#showBlanks").click(function() {
     $(".input-group").show();
   });
@@ -14,6 +17,8 @@ $(document).ready(function() {
    $(".era").show();
    $(".period").show();
    $(".epoch").show(); 
+   $(".archean-eras").show();
+   $(".proterozoic-eras").show();
  });
 
   $("#showEons").click(function() {
@@ -22,6 +27,8 @@ $(document).ready(function() {
 
   $("#showEras").click(function() {
    $(".era").show();
+   $(".archean-eras").show();
+   $(".proterozoic-eras").show();
  });
 
   $("#showPeriods").click(function() {
@@ -37,6 +44,7 @@ $(document).ready(function() {
    $(".era").hide();
    $(".period").hide();
    $(".epoch").hide();
+   $(".archean-eras").hide();
  });
 
   $("#hideEons").click(function() {
@@ -45,6 +53,7 @@ $(document).ready(function() {
 
   $("#hideEras").click(function() {
    $(".era").hide();
+   $(".archean-eras").hide();
  });
 
   $("#hidePeriods").click(function() {
@@ -71,12 +80,27 @@ $(document).ready(function() {
     $('#geologic-time-period input[type=text]').blur(function(e) {
       if((this.name) != (this.value)) {          
         $('#' + this.name).removeClass('has-success').addClass('has-error');  
+        if(this.name == "Archean"){
+         $(".archean-eras").hide();
+       }
 
-      } else {
-        $('#' + this.name).removeClass('has-error').addClass('has-success');
-        correctCount++;
-        console.log(correctCount);
-      }    
+       if(this.name == "Proterozoic"){
+         $(".proterozoic-eras").hide();
+       }
+
+     } else {
+      $('#' + this.name).removeClass('has-error').addClass('has-success');
+      correctCount++;
+      if(this.name == "Archean"){
+       $(".archean-eras").show();
+     }
+
+     if(this.name == "Proterozoic"){
+       $(".proterozoic-eras").show();
+     }
+
+     console.log(correctCount);
+   }    
   });//end instant validate
 
 

@@ -11,7 +11,7 @@ table {
 	height: 100%;
 }
 
-.eon, .era, .period, .epoch, .mya {
+.eon, .era, .period, .epoch, .mya, .archean-eras, .proterozoic-eras {
 	font-weight: bold;	
 }
 
